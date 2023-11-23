@@ -9,8 +9,13 @@ html{
 
 body::-webkit-scrollbar{
     display: none;
+    width: 0;
+    height: 0;
 }
 
+html,body{
+    scrollbar-width: none;
+}
 /* Navbar */
 
 li{
@@ -91,6 +96,7 @@ a{
     display: flex;
     height: 250px;
     float: right;
+    justify-content: flex-end;
     top: 0;
 }
 
@@ -98,6 +104,7 @@ a{
     height: 100px;
     display: flex;
     position: fixed;
+    justify-content: flex-end;
     bottom: 3rem;
     right: 2.5rem;
 }
@@ -199,7 +206,7 @@ a{
     margin-top: 100px;
     margin-bottom: 100px;
     border-radius: 12px;
-    position: relative;
+    /* position: relative; */
 }
 
 
